@@ -67,10 +67,7 @@ export default function App() {
               animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ duration: 1.5 }}
             >
-              <ul className="flex items-center" >
-                <li className="ml-5 border-b-0">
-                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl"/>
-                </li>
+              <ul className="flex items-center" >                
                 <li>
                   <a className="
                       text-black dark:text-white  px-4 py-2  ml-8
