@@ -46,7 +46,7 @@ export default function App() {
 
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={`w-screen h-screen ${darkMode ? "dark" : ""}`} style={{ margin: 0, padding: 0 }}>
       
       <head>
         <title>Portfolio</title>
@@ -55,10 +55,10 @@ export default function App() {
       </head>
       
 
-      <main className="bg-green-100  dark:bg-gray-900 relative ">
-        <div className="h-screen snap-y snap-mandatory overflow-scroll px=10" >
+      <main className="bg-customGreen  dark:bg-gray-900 relative w-full h-full m-0">
+        <div className="h-screen snap-y snap-mandatory overflow-scroll px=10 m-0" >
         
-          <nav className="px-5 pt-10 pb-10 mb-12 flex justify-between dark:text-white sticky top-0 z-50 bg-green-100 dark:bg-gray-900">
+          <nav className="px-5 pt-10 pb-10 mb-12 flex justify-between dark:text-white sticky top-0 z-50 bg-customGreen dark:bg-gray-900">
             <div class="fadeInUp">
               <h1 className="text-3xl font-burtons">R . R</h1>
             </div>
@@ -115,7 +115,7 @@ export default function App() {
 
       <section id="intro" className=" snap-start pt-20 py-20 flex-row h-4/5 mb-40 overflow-hidden">
         <div className="pt-20 relative px-40 flex flex-col md:flex-row space-y-5 items-center justify-evenly text-center md:text-left md:max-h-fit" >
-          <div className="text-left p-10 min-w-[380px] w-380px whitespace-nowrap">
+          <div className="text-left p-10  whitespace-nowrap">
             <h4 className="text-2xl py-2 md:text-3xl dark:text-white">Hello, my name is </h4>
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Ross Ritchie</h2>
             <span className="text-3xl dark:text-white">I am a </span> 
@@ -164,7 +164,7 @@ export default function App() {
       </section>   
             
 
-  <section id="about" className="snap-start pt-20 overflow-hidden h-full mb-40 bg-green-100 dark:bg-gray-900 dark:text-white" ref={ref}>
+  <section id="about" className="snap-start pt-20 overflow-hidden h-full mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
       <div className="text-black text-3xl font-bold items-center justify-center pt-10 pb-5 flex flex-row">
         <img 
           src="https://raw.githubusercontent.com/rrit5727/Portfolio-website/main/Readme_imgs/GPT.png" 
@@ -251,53 +251,53 @@ export default function App() {
           md:grid md:grid-cols-6 md:grid-rows-3 md:min-w-[900px] 
           sm:grid sm:grid-cols-4 sm:grid-rows-5 sm:min-w-[500px]">            
               <div className="fadeInUp relative h-[150px] w-[100px] bg-gradient-to-b overflow-hidden">
-                <img src={css}  objectFit="cover" classname="w-[100px] h-[100px] py-10" />                
+                <img src={css}  objectfit="cover" classname="w-[100px] h-[100px] py-10" />                
               </div>            
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={js} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={js} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={aws} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={aws} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={bootstrap} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={bootstrap} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={express} layout="fill" objectFit="contain" classname="w-[100px] h-[100px]" />
+              <img src={express} layout="fill" objectfit="contain" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={github} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={github} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={html} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={html} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={mongodb} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={mongodb} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={next} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={next} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={node} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={node} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={postgresql} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={postgresql} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={python} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={python} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp 
             relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden  
             sm:col-start-2 md:col-start-3 " >
-              <img src={react} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={react} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             <div className="fadeInUp 
             relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden  
             sm:col-start-3 md:col-start-4 " >
-              <img src={tailwind} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={tailwind} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div>
             {/* <div className="relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden  sm:col-start-3 sm:grid-row-start-4 " >
-              <img src={tailwind} layout="fill" objectFit="cover" classname="w-[100px] h-[100px]" />
+              <img src={tailwind} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
             </div> */}
           </div>
         </div>
