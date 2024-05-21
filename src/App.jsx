@@ -135,7 +135,7 @@ export default function App() {
                       (el) => el.classList.remove('custom-type-animation-cursor'),                
                     ]}
                     wrapper="span"
-                    speed={50}
+                    speed={{ type: 'keyStrokeDelayInMs', value: 30 }}
                     style={{  display: 'inline-block' }}
                     class="custom-type-animation-cursor"
                     repeat={0}
