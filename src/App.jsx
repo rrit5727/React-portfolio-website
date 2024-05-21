@@ -147,9 +147,9 @@ export default function App() {
           </div>           
           <div className="w-[40px] min-w-[40px]">              
           </div>
-          <div className="relative h-[380px] w-[380px] min-w-[380px] sm:w-[255px] bg-gradient-to-b from-teal-600 rounded-full overflow-hidden border-8 border-teal-500 border-solid" >
+          <div className="relative h-[380px] w-[380px] min-w-[380px] sm:w-[255px] bg-gradient-to-b from-teal-600 rounded-full overflow-hidden border-8 border-teal-500 border-solid " >
             <div className="rounded-full  overflow-hidden ">
-              <img src={headshot} layout="fill" objectFit="cover" />
+              <img src={headshot} layout="fill" objectFit="cover" className='transform -translate-y-10' />
             </div>
           </div>
         </div>
