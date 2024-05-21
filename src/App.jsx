@@ -154,11 +154,15 @@ export default function App() {
           </div>
         </div>
         <div className="flex flex-row items justify-center">        
-          <div className="text-5xl flex justify-center gap-16 py-1 px-2 text-gray-600 dark:text-gray-400">
-            <a href="https://www.linkedin.com/in/ross-ritchie-631b20a2/" target="blank"><AiFillLinkedin /></a>            
+          <div className="text-5xl flex justify-center gap-16 py-1 px-2 text-iconColor dark:text-gray-400 ">
+            <a href="https://www.linkedin.com/in/ross-ritchie-631b20a2/" target="blank">
+              <AiFillLinkedin className='text-iconColor'/>
+            </a>            
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-1 px-2 text-gray-600 dark:text-gray-400">
-            <a href="https://github.com/rrit5727/" target="blank"><FaGithub /></a>            
+          <div className="text-5xl flex justify-center gap-16 py-1 px-2 text-iconColor dark:text-gray-400 ">
+            <a href="https://github.com/rrit5727/" target="blank">
+              <FaGithub className='text-iconColor'/>
+            </a>            
           </div>
         </div>
       </section>   

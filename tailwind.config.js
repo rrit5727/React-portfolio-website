@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         customGreen: '#D1FAE5',
+        iconColor: '#6D727B',
       }
     },
   },
