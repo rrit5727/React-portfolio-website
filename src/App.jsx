@@ -165,7 +165,7 @@ export default function App() {
             
 
   <section id="about" className="snap-start pt-20 overflow-hidden h-full mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
-      <div className="text-black text-3xl font-bold items-center justify-center pt-10 pb-5 flex flex-row">
+      <div className="text-black text-3xl font-bold items-center justify-center pt-10 pb- flex flex-row">
         <img 
           src="https://raw.githubusercontent.com/rrit5727/Portfolio-website/main/Readme_imgs/GPT.png" 
           className="rounded-lg  h-[40px] " 
@@ -176,7 +176,7 @@ export default function App() {
         <div className="text-left text-2xl w-full max-w-7xl mx-auto">
           <div className="flex flex-col items-start">
             <h5 className="text-xl font-bold mb-2">User</h5>
-            <div className="bg-teal-200 dark:bg-teal-800 p-5 rounded-lg shadow-lg mb-5 w-full">
+            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full">
               {animationTriggered && (
                 <TypeAnimation
                   cursor={false}
@@ -187,14 +187,14 @@ export default function App() {
                     1000,                  
                     (el) => el.classList.remove('custom-type-animation-cursor'),
                   ]}
-                  speed={{ type: 'keyStrokeDelayInMs', value: 30 }}
+                  speed={{ type: 'keyStrokeDelayInMs', value: 15 }}
                   omitDeletionAnimation={true}
                   repeat={0}
                 />
               )}
             </div>
             <h5 className="text-xl font-bold mb-2">Ross</h5>
-            <div className="bg-teal-200 dark:bg-teal-800 p-5 rounded-lg shadow-lg mb-5 w-full">
+            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full">
               {animationTriggered && (
                 <TypeAnimation
                   cursor={false}
@@ -217,7 +217,7 @@ export default function App() {
                     
                     (el) => el.classList.remove('custom-type-animation-cursor'),
                   ]}
-                  speed={{ type: 'keyStrokeDelayInMs', value: 30 }}
+                  speed={{ type: 'keyStrokeDelayInMs', value: 15 }}
                   omitDeletionAnimation={true}
                   repeat={0}
                 />
