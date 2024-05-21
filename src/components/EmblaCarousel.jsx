@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
+import React, { useCallback, useEffect } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 export const EmblaCarousel = () => {
@@ -18,11 +18,11 @@ export const EmblaCarousel = () => {
       <div className="embla__viewport h-full dark:text-white" ref={emblaRef}>
         <div className="embla__container">
 
-          <div className="embla__slide flex flex-row h-4/5 justify-center items-center">
-            <div className='pl-5 pt-10 w-3/5 h-4/5 rounded-lg'>
+          <div className="embla__slide flex flex-row h-3/5 justify-center items-center">
+            <div className='pl-5 pt-0 w-3/5 h-3/5 rounded-lg'>
               <img 
               src="https://raw.githubusercontent.com/tdha/project-three/main/Readme_imgs/Results.png" 
-              className='object-center rounded-lg h-[400px]' 
+              className='object-center rounded-lg h-[300px]' 
               />
             </div>
             <div className='w-1/3 h-3/5 '>
@@ -94,7 +94,7 @@ export const EmblaCarousel = () => {
               <div className=' px-10 py-15 text-center flex flex-col justify-center rounded-lg object-contain'>
                 <h1 className='text-2xl pb-5 border-b-4  border-b-secondary'>PERSONAL PORTFOLIO</h1>
                 <p className='pt-5'>
-                  Personal portfolio website created using Next.js/React. Styling done using tailwind, TypeAnimation 
+                  Personal portfolio website created using React. Styling done using tailwind, TypeAnimation 
                   and embla carousel.  
                 </p>                
               </div>              
