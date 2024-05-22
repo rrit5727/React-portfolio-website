@@ -242,11 +242,11 @@ export default function App() {
         />
         <h1 className="text-3xl font-bold pl-5 dark:text-white">Chat GP-ME</h1>
       </div>
-      <div className="pt-5 relative px-20 flex flex-col space-y-5 items-start justify-evenly text-center md:text-left md:max-h-fit">
+      <div className="pt-5 relative md:px-20 sm:px-5 flex flex-col space-y-5 items-start justify-evenly text-center md:text-left md:max-h-fit">
         <div className="text-left text-2xl w-full max-w-7xl mx-auto">
           <div className="flex flex-col items-start">
             <h5 className="text-xl font-bold mb-2">User</h5>
-            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full">
+            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full text-sm">
               {animationTriggered && (
                 <TypeAnimation
                   cursor={false}
@@ -264,7 +264,7 @@ export default function App() {
               )}
             </div>
             <h5 className="text-xl font-bold mb-2">Ross</h5>
-            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full">
+            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full text-sm">
               {animationTriggered && (
                 <TypeAnimation
                   cursor={false}
