@@ -25,9 +25,9 @@ export const EmblaCarousel = () => {
               className='object-center rounded-lg w-full h-full' 
               />
             </div>
-            <div className='md:w-1/3 md:h-3/5 sm: '>
+            <div className='md:w-1/3 md:h-3/5  '>
               <div className=' px-10 py-15 text-center flex flex-col justify-center rounded-lg object-contain'>
-                <h1 className='md:text-2xl sm:text-xl sm:pt-5 pb-5 border-b-4  border-b-secondary'>AFFORDABLE COMMUTE FINDER</h1>
+                <h1 className='md:text-2xl sm:text-xl  sm:pt-5 pb-5 border-b-4  border-b-secondary'>AFFORDABLE COMMUTE FINDER</h1>
                 <p className='pt-5 sm:text-sm'>
                   React App that calculates travel time (by car and public transport) between the users place 
                   of work and various recently sold properties. The results are grouped according to 15 minute 
@@ -107,14 +107,14 @@ export const EmblaCarousel = () => {
         bg-gray-800 text-white p-2 rounded-full ml-4"
         onClick={scrollPrev}
       >
-        <BsChevronCompactLeft size={24}/>        
+        <BsChevronCompactLeft className='sm:w-4 sm:h-4 md:w-6 md:h-6'/>        
       </button>
       <button 
         className="embla__next absolute right-0 top-1/2 transform -translate-y-1/2
          bg-gray-800 text-white p-2 rounded-full mr-4" 
          onClick={scrollNext}
       >
-        <BsChevronCompactRight size={24}/>        
+        <BsChevronCompactRight className='sm:w-4 sm:h-4 md:w-6 md:h-6'/>        
       </button>
     </div>
   )

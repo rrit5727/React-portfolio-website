@@ -300,7 +300,7 @@ export default function App() {
     </section>
 
     <section id="projects" className="h-screen snap-start pt- flex justify-center items-center">              
-      <div className="flex flex-col items-center justify-center md:h-3/5 md:w-4/5 sm:h-3/5 sm:w-4/5  rounded-lg overflow-hidden">
+      <div className="flex flex-col items-center justify-center md:h-3/5 md:w-4/5 sm:h-4/5 sm:w-4/5  rounded-lg overflow-hidden">
         <h1 className="text-3xl pb-5 dark:text-white">
           Projects
         </h1>
