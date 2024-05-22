@@ -320,51 +320,51 @@ export default function App() {
           justify-center justify-items-center text-center
           md:grid md:grid-cols-6 md:grid-rows-3 md:min-w-[900px] 
           sm:grid sm:grid-cols-4 sm:grid-rows-5 sm:min-w-[500px]">            
-              <div className="fadeInUp relative h-[150px] w-[100px] bg-gradient-to-b overflow-hidden">
-                <img src={css}  objectfit="cover" classname="w-[100px] h-[100px] py-10" />                
+              <div className="fadeInUp relative md:h-[150px] sm:h-[75px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+                <img src={css}  objectfit="cover" classname="md:w-[100px] sm:w-[50px] md:h-[100px] sm:h-[50px] py-10" />                
               </div>            
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={js} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={aws} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={bootstrap} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={express} layout="fill" objectfit="contain" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={github} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={html} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={mongodb} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={next} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={node} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={postgresql} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden">
-              <img src={python} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={js} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={aws} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={bootstrap} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={express} layout="fill" objectfit="contain" classname="w-[100px] md:h-[100px] md:sm[1005]" />
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={github} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={html} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={mongodb} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={next} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={node} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={postgresql} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
+              <img src={python} layout="fill" objectfit="cover" classname="w-[100px] md:h-[100px] md:sm[1005]" />md:
+            </div> 
+            <div className="fadeInUp 
+              relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden  
+              sm:col-start-2 md:col-start-3 " >
+              <img src={react} layout="fill" objectfit="cover" classname="md:w-[100px] sm:w-[50px] md:h-[100px] sm:h-[50px]" />
             </div>
             <div className="fadeInUp 
-            relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden  
-            sm:col-start-2 md:col-start-3 " >
-              <img src={react} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
-            </div>
-            <div className="fadeInUp 
-            relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden  
-            sm:col-start-3 md:col-start-4 " >
-              <img src={tailwind} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
+              relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden  
+              sm:col-start-3 md:col-start-4 " >
+              <img src={tailwind} layout="fill" objectfit="cover" classname="md:w-[100px] sm:w-[50px] md:h-[100px] sm:h-[50px]" />
             </div>
             {/* <div className="relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden  sm:col-start-3 sm:grid-row-start-4 " >
               <img src={tailwind} layout="fill" objectfit="cover" classname="w-[100px] h-[100px]" />
