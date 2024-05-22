@@ -319,7 +319,7 @@ export default function App() {
           <div className="
           justify-center justify-items-center text-center
           md:grid md:grid-cols-6 md:grid-rows-3 md:min-w-[900px] 
-          sm:grid sm:grid-cols-4 sm:grid-rows-5 sm:min-w-[500px]">            
+          sm:grid sm:grid-cols-3 sm:grid-rows-5 sm:min-w-[500px]">            
               <div className="fadeInUp relative md:h-[150px] sm:h-[75px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden">
                 <img src={css}  objectfit="cover" classname="md:w-[100px] sm:w-[50px] md:h-[100px] sm:h-[50px] py-10" />                
               </div>            
@@ -358,12 +358,12 @@ export default function App() {
             </div> 
             <div className="fadeInUp 
               relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden  
-              sm:col-start-2 md:col-start-3 " >
+              sm:col-start-1 md:col-start-2 " >
               <img src={react} layout="fill" objectfit="cover" classname="md:w-[100px] sm:w-[50px] md:h-[100px] sm:h-[50px]" />
             </div>
             <div className="fadeInUp 
               relative md:h-[100px] sm:h-[50px] md:w-[100px] sm:w-[50px] bg-gradient-to-b overflow-hidden  
-              sm:col-start-3 md:col-start-4 " >
+              sm:col-start-2 md:col-start-3 " >
               <img src={tailwind} layout="fill" objectfit="cover" classname="md:w-[100px] sm:w-[50px] md:h-[100px] sm:h-[50px]" />
             </div>
             {/* <div className="relative h-[100px] w-[100px] bg-gradient-to-b overflow-hidden  sm:col-start-3 sm:grid-row-start-4 " >
