@@ -56,7 +56,7 @@ export default function App() {
       
 
       <main className="bg-customGreen  dark:bg-gray-900 relative w-full h-full m-0">
-        <div className="h-screen snap-y snap-mandatory overflow-scroll px=10 m-0" >
+        <div className="h-screen md:snap-y md:snap-mandatory overflow-scroll px=10 m-0" >
         
           <nav className="px-5 pt-10 pb-10 mb-12 flex justify-between dark:text-white sticky top-0 z-50 bg-customGreen dark:bg-gray-900">
             <div class="fadeInUp">
