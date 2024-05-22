@@ -179,7 +179,7 @@ export default function App() {
     
     
 
-      <section id="intro" className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 mb-40 overflow-hidden">
+      <section id="intro" className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 md:mb-40  overflow-hidden">
         <div className="md:pt-20 sm:pt-2 relative px-40 flex flex-col md:flex-row md:space-y-5 sm:space-y-1  items-center justify-evenly text-center md:text-left md:max-h-fit" >
           <div className="text-left md:p-10 sm:p-2  whitespace-nowrap">
             <h4 className="text-2xl py-2 md:text-3xl dark:text-white">Hello, my name is </h4>
@@ -234,7 +234,7 @@ export default function App() {
       </section>   
             
 
-  <section id="about" className="snap-start pt-20 overflow-hidden h-full mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
+  <section id="about" className="snap-start pt-20 overflow-hidden h-full md:mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
       <div className="text-black text-3xl font-bold items-center justify-center pt-10 pb- flex flex-row">
         <img 
           src="https://raw.githubusercontent.com/rrit5727/Portfolio-website/main/Readme_imgs/GPT.png" 
@@ -246,7 +246,7 @@ export default function App() {
         <div className="text-left text-2xl w-full max-w-7xl mx-auto">
           <div className="flex flex-col items-start">
             <h5 className="text-xl font-bold mb-2">User</h5>
-            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full text-sm">
+            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full md:text-xl sm:text-sm">
               {animationTriggered && (
                 <TypeAnimation
                   cursor={false}
@@ -264,7 +264,7 @@ export default function App() {
               )}
             </div>
             <h5 className="text-xl font-bold mb-2">Ross</h5>
-            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full text-sm">
+            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full md:text-xl sm:text-sm">
               {animationTriggered && (
                 <TypeAnimation
                   cursor={false}
@@ -300,7 +300,7 @@ export default function App() {
     </section>
 
     <section id="projects" className="h-screen snap-start pt- flex justify-center items-center">              
-      <div className="flex flex-col items-center justify-center h-3/5 w-4/5 rounded-lg overflow-hidden">
+      <div className="flex flex-col items-center justify-center md:h-3/5 md:w-4/5 sm:h-3/5 sm:w-4/5  rounded-lg overflow-hidden">
         <h1 className="text-3xl pb-5 dark:text-white">
           Projects
         </h1>
