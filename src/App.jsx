@@ -24,6 +24,7 @@ import { red } from "tailwindcss/colors";
 import {EmblaCarousel} from './components/EmblaCarousel';
 import { useInView } from "react-intersection-observer";
 
+
 export default function App() {
   
   
@@ -43,6 +44,16 @@ export default function App() {
   }, [inView, animationTriggered]);
 
   const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
+
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
 
 
   return (
@@ -67,7 +78,10 @@ export default function App() {
               animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ duration: 1.5 }}
             >
-              <ul className="flex items-center" >                
+              <ul className="flex items-center" class="sidebar">                
+                <li onClick={hideSidebar}>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                </li>
                 <li>
                   <a className="
                       text-black dark:text-white  px-4 py-2  ml-8
@@ -102,6 +116,47 @@ export default function App() {
                       border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
                     href="https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20CV.pdf">CV
                   </a>
+                </li>
+              </ul>
+
+              <ul className="flex items-center" >                
+                <li class="hideOnMobile">
+                  <a className="
+                      text-black dark:text-white  px-4 py-2  ml-8
+                      border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
+                    href="/#intro">Intro
+                  </a>
+                </li>
+                <li class="hideOnMobile">
+                  <a className="
+                      text-black dark:text-white  px-4 py-2  ml-8
+                      border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
+                    href="/#about">About
+                  </a>
+                </li>
+                <li class="hideOnMobile">
+                  <a className="
+                      text-black dark:text-white  px-4 py-2  ml-8
+                      border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
+                    href="/#projects">Projects
+                  </a>
+                </li>
+                <li class="hideOnMobile">
+                  <a className="
+                      text-black dark:text-white  px-4 py-2  ml-8
+                      border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
+                    href="/#skills">Skills
+                  </a>
+                </li>
+                <li class="hideOnMobile">
+                  <a className="
+                      text-black dark:text-white  px-4 py-2  ml-8
+                      border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
+                    href="https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20CV.pdf">CV
+                  </a>
+                </li>
+                <li class="hideOnMobile" class="menu-button" onClick={showSidebar}>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>                  
                 </li>
               </ul>
             </motion.div>
