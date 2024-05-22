@@ -6,10 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
+      colors: { 
         customGreen: '#D1FAE5',
         iconColor: '#6D727B',
-      }
+      },
+       screens: {
+        'sm': '100px', 
+
+       }
     },
   },
   plugins: [],

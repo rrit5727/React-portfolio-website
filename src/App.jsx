@@ -69,7 +69,7 @@ export default function App() {
       <main className="bg-customGreen  dark:bg-gray-900 relative w-full h-full m-0">
         <div className="h-screen md:snap-y md:snap-mandatory overflow-scroll px=10 m-0" >
         
-          <nav className="px-5 pt-10 pb-10 mb-12 flex justify-between dark:text-white sticky top-0 z-50 bg-customGreen dark:bg-gray-900">
+          <nav className="px-5 pt-10 sm:pt-3 pb-10 sm:pb-2 mb-12 sm:mb-2 flex justify-between dark:text-white sticky top-0 z-50 bg-customGreen dark:bg-gray-900">
             <div class="fadeInUp">
               <h1 className="text-3xl font-burtons">R . R</h1>
             </div>
@@ -155,7 +155,21 @@ export default function App() {
                     href="https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20CV.pdf">CV
                   </a>
                 </li>
-                <li class="hideOnMobile" class="menu-button" onClick={showSidebar}>
+                <li class="menu-button" onClick={showSidebar}>
+                  <div className="text-3xl flex justify-center gap-16 py-1 px-2 text-iconColor dark:text-gray-400 ">
+                    <a href="https://github.com/rrit5727/" target="blank">
+                      <FaGithub className='text-iconColor'/>
+                    </a>            
+                  </div>                  
+                </li>
+                <li class="menu-button" onClick={showSidebar}>
+                  <div className="text-3xl flex justify-center gap-16 py-1 px-2 text-iconColor dark:text-gray-400 ">
+                    <a href="https://www.linkedin.com/in/ross-ritchie-631b20a2/" target="blank">
+                      <AiFillLinkedin className='text-iconColor'/>
+                    </a>            
+                  </div>                  
+                </li>
+                <li class="menu-button" onClick={showSidebar}>
                   <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>                  
                 </li>
               </ul>
@@ -165,9 +179,9 @@ export default function App() {
     
     
 
-      <section id="intro" className=" snap-start pt-20 py-20 flex-row h-4/5 mb-40 overflow-hidden">
-        <div className="pt-20 relative px-40 flex flex-col md:flex-row space-y-5 items-center justify-evenly text-center md:text-left md:max-h-fit" >
-          <div className="text-left p-10  whitespace-nowrap">
+      <section id="intro" className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 mb-40 overflow-hidden">
+        <div className="md:pt-20 sm:pt-2 relative px-40 flex flex-col md:flex-row md:space-y-5 sm:space-y-1  items-center justify-evenly text-center md:text-left md:max-h-fit" >
+          <div className="text-left md:p-10 sm:p-2  whitespace-nowrap">
             <h4 className="text-2xl py-2 md:text-3xl dark:text-white">Hello, my name is </h4>
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Ross Ritchie</h2>
             <span className="text-3xl dark:text-white">I am a </span> 
@@ -199,22 +213,22 @@ export default function App() {
           </div>           
           <div className="w-[40px] min-w-[40px]">              
           </div>
-          <div className="relative h-[380px] w-[380px] min-w-[380px] sm:w-[255px] bg-gradient-to-b from-teal-600 rounded-full overflow-hidden border-8 border-teal-500 border-solid " >
+          <div className="relative md:h-[380px] md:w-[380px] md:min-w-[380px] sm:h-[250px] sm:w-[250px] sm:min-w-[250px] bg-gradient-to-b from-teal-600 rounded-full overflow-hidden border-8 border-teal-500 border-solid " >
             <div className="rounded-full  overflow-hidden ">
               <img src={headshot} layout="fill" objectFit="cover" className='transform -translate-y-10' />
             </div>
           </div>
         </div>
-        <div className="flex flex-row items justify-center">        
+        <div  className="flex flex-row items-center justify-center">        
           <div className="text-5xl flex justify-center gap-16 py-1 px-2 text-iconColor dark:text-gray-400 ">
-            <a href="https://www.linkedin.com/in/ross-ritchie-631b20a2/" target="blank">
+            <a class="hideOnMobile" href="https://www.linkedin.com/in/ross-ritchie-631b20a2/" target="blank">
               <AiFillLinkedin className='text-iconColor'/>
             </a>            
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-1 px-2 text-iconColor dark:text-gray-400 ">
-            <a href="https://github.com/rrit5727/" target="blank">
+          <div className="text-5xl flex justify-center gap-16 py-1 px-2 text-iconColor dark:text-gray-400">
+            <a class="hideOnMobile" href="https://github.com/rrit5727/" target="blank">
               <FaGithub className='text-iconColor'/>
-            </a>            
+          </a>            
           </div>
         </div>
       </section>   
