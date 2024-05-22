@@ -234,7 +234,7 @@ export default function App() {
       </section>   
             
 
-  <section id="about" className="snap-start pt-20 overflow-hidden h-full md:mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
+  <section id="about" className="snap-start md:pt-20 sm:pt-10 overflow-hidden h-full md:mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
       <div className="text-black text-3xl font-bold items-center justify-center pt-10 pb- flex flex-row">
         <img 
           src="https://raw.githubusercontent.com/rrit5727/Portfolio-website/main/Readme_imgs/GPT.png" 
@@ -264,7 +264,7 @@ export default function App() {
               )}
             </div>
             <h5 className="text-xl font-bold md:mb-2">Ross</h5>
-            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg mb-5 w-full md:text-xl sm:text-sm">
+            <div className="bg-teal-200 dark:bg-teal-800 p-2 rounded-lg shadow-lg md:mb-5 w-full md:text-xl sm:text-sm">
               {animationTriggered && (
                 <TypeAnimation
                   cursor={false}
