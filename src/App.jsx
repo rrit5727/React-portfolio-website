@@ -45,6 +45,18 @@ export default function App() {
   }, [inView, animationTriggered]);
 
   const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
+  const sectionsRef = {
+    intro: useRef(null),
+    about: useRef(null),
+    projects: useRef(null),
+    skills: useRef(null),
+  };
+
+  function scrollToSection(section) {
+    sectionsRef[section].current.scrollIntoView({ behavior: 'smooth' });
+    setShowSidebar(false); // Close sidebar after scrolling
+  }
+
 
   function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
@@ -55,6 +67,8 @@ export default function App() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
   }
+
+  
 
 
   return (
@@ -88,28 +102,28 @@ export default function App() {
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#">Intro
+                      href="/#intro" onClick={() => scrollToSection("intro")}>Intro
                     </a>
                   </li>
                   <li>
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#about">About
+                      href="/#about" onClick={() => scrollToSection("about")}>About
                     </a>
                   </li>
                   <li>
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#projects">Projects
+                      href="/#projects" onClick={() => scrollToSection("projects")}>Projects
                     </a>
                   </li>
                   <li>
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#skills">Skills
+                      href="/#skills" onClick={() => scrollToSection("skills")}>Skills
                     </a>
                   </li>
                   <li>
@@ -126,28 +140,28 @@ export default function App() {
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#intro">Intro
+                      href="/#intro" onClick={() => scrollToSection("intro")}>Intro
                     </a>
                   </li>
                   <li class="hideOnMobile">
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#about">About
+                      href="/#about" onClick={() => scrollToSection("about")}>About
                     </a>
                   </li>
                   <li class="hideOnMobile">
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#projects">Projects
+                      href="/#projects" onClick={() => scrollToSection("projects")}>Projects
                     </a>
                   </li>
                   <li class="hideOnMobile">
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#skills">Skills
+                      href="/#skills" onClick={() => scrollToSection("skills")}>Skills
                     </a>
                   </li>
                   <li class="hideOnMobile">
@@ -180,7 +194,7 @@ export default function App() {
 
         
                                                     
-                <section  className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 md:mb-40  overflow-hidden">
+                <section id="intro"  className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 md:mb-40  overflow-hidden">
                   <div className="md:pt-20 sm:pt-2 relative px-40 flex flex-col md:flex-row md:space-y-5 sm:space-y-1  items-center justify-evenly text-center md:text-left md:max-h-fit" >
                     <div className="text-left md:p-10 sm:p-2  whitespace-nowrap">
                       <h4 className="text-2xl py-2 md:text-3xl dark:text-white">Hello, my name is </h4>
