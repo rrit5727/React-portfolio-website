@@ -23,7 +23,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { red } from "tailwindcss/colors";
 import {EmblaCarousel} from './components/EmblaCarousel';
 import { useInView } from "react-intersection-observer";
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 
 
 export default function App() {
@@ -58,7 +58,7 @@ export default function App() {
 
 
   return (
-    <Router>
+    
       <div className={`w-screen h-screen ${darkMode ? "dark" : ""}`} style={{ margin: 0, padding: 0 }}>
         
         <head>
@@ -85,32 +85,32 @@ export default function App() {
                     <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
                   </li>
                   <li>
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/">Intro
-                    </Link>
+                      href="/#">Intro
+                    </a>
                   </li>
                   <li>
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/about">About
-                    </Link>
+                      href="/#about">About
+                    </a>
                   </li>
                   <li>
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/projects">Projects
-                    </Link>
+                      href="/#projects">Projects
+                    </a>
                   </li>
                   <li>
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/skills">Skills
-                    </Link>
+                      href="/#skills">Skills
+                    </a>
                   </li>
                   <li>
                     <a className="
@@ -123,32 +123,32 @@ export default function App() {
 
                 <ul className="flex items-center" >                
                   <li class="hideOnMobile">
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/">Intro
-                    </Link>
+                      href="/#intro">Intro
+                    </a>
                   </li>
                   <li class="hideOnMobile">
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/about">About
-                    </Link>
+                      href="/#about">About
+                    </a>
                   </li>
                   <li class="hideOnMobile">
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/projects">Projects
-                    </Link>
+                      href="/#projects">Projects
+                    </a>
                   </li>
                   <li class="hideOnMobile">
-                    <Link className="
+                    <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      to="/skills">Skills
-                    </Link>
+                      href="/#skills">Skills
+                    </a>
                   </li>
                   <li class="hideOnMobile">
                     <a className="
@@ -178,11 +178,8 @@ export default function App() {
               </motion.div>
             </nav>
 
-        <Routes>
-            <Route
-              path="/"
-              element={
-                <div>                                        
+        
+                                                    
                 <section  className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 md:mb-40  overflow-hidden">
                   <div className="md:pt-20 sm:pt-2 relative px-40 flex flex-col md:flex-row md:space-y-5 sm:space-y-1  items-center justify-evenly text-center md:text-left md:max-h-fit" >
                     <div className="text-left md:p-10 sm:p-2  whitespace-nowrap">
@@ -236,14 +233,9 @@ export default function App() {
                     </div>
                   </div>
                 </section>
-                </div>              
-              }
-            />
+                
 
-            <Route 
-              path="/about"
-              element={
-                <div>
+            
                 <section id="about" className="snap-start md:pt-20 sm:pt-10 overflow-hidden h-full md:mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
                     <div className="text-black text-3xl font-bold items-center justify-center pt-10 pb- flex flex-row">
                       <img 
@@ -308,14 +300,9 @@ export default function App() {
                       <div className=""></div>
                     </div>
                   </section>
-                </div>
-              }
-            />
+                
 
-              <Route 
-                path="/projects"
-                element={
-                  <div>
+              
                   <section id="projects" className="h-screen snap-start pt- flex justify-center items-center">              
                     <div className="flex flex-col items-center justify-center md:h-3/5 md:w-4/5 sm:h-4/5 sm:w-4/5  rounded-lg overflow-hidden">
                       <h1 className="text-3xl pb-5 dark:text-white">
@@ -326,14 +313,9 @@ export default function App() {
                       </div>  
                     </div>
                   </section>
-                  </div>            
-                }
-              />  
+                   
                   
-              <Route
-                path="/skills"
-                element={
-                  <div> 
+             
                   <section id="skills" className=" h-screen snap-start pt-20">
                     <div className="flex-col justify-center items-center text-center justify-items-end">
                       <div className="h-[100px] pt-10">
@@ -397,15 +379,13 @@ export default function App() {
                       </div>
                     </div>
                   </section>
-                  </div>
-                }
-              />
+                  
       
 
-            </Routes>         
+                     
           </div>
         </main>
       </div>
-    </Router>
+    
   );
 }
