@@ -45,6 +45,7 @@ export default function App() {
   }, [inView, animationTriggered]);
 
   const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
+
   const sectionsRef = {
     intro: useRef(null),
     about: useRef(null),
@@ -102,28 +103,28 @@ export default function App() {
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#intro" onClick={() => scrollToSection("intro")}>Intro
+                       onClick={() => scrollToSection("intro")}>Intro
                     </a>
                   </li>
                   <li>
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#about" onClick={() => scrollToSection("about")}>About
+                       onClick={() => scrollToSection("about")}>About
                     </a>
                   </li>
                   <li>
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#projects" onClick={() => scrollToSection("projects")}>Projects
+                       onClick={() => scrollToSection("projects")}>Projects
                     </a>
                   </li>
                   <li>
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#skills" onClick={() => scrollToSection("skills")}>Skills
+                       onClick={() => scrollToSection("skills")}>Skills
                     </a>
                   </li>
                   <li>
@@ -140,28 +141,28 @@ export default function App() {
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#intro" onClick={() => scrollToSection("intro")}>Intro
+                       onClick={() => scrollToSection("intro")}>Intro
                     </a>
                   </li>
                   <li class="hideOnMobile">
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#about" onClick={() => scrollToSection("about")}>About
+                       onClick={() => scrollToSection("about")}>About
                     </a>
                   </li>
                   <li class="hideOnMobile">
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#projects" onClick={() => scrollToSection("projects")}>Projects
+                       onClick={() => scrollToSection("projects")}>Projects
                     </a>
                   </li>
                   <li class="hideOnMobile">
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="/#skills" onClick={() => scrollToSection("skills")}>Skills
+                       onClick={() => scrollToSection("skills")}>Skills
                     </a>
                   </li>
                   <li class="hideOnMobile">
@@ -194,7 +195,7 @@ export default function App() {
 
         
                                                     
-                <section id="intro"  className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 md:mb-40  overflow-hidden">
+                <section id="intro" ref={sectionsRef.intro} className="snap-start md:pt-20 sm:pt-2 md:py-20 sm:py-2 flex-row h-4/5 md:mb-40  overflow-hidden">
                   <div className="md:pt-20 sm:pt-2 relative px-40 flex flex-col md:flex-row md:space-y-5 sm:space-y-1  items-center justify-evenly text-center md:text-left md:max-h-fit" >
                     <div className="text-left md:p-10 sm:p-2  whitespace-nowrap">
                       <h4 className="text-2xl py-2 md:text-3xl dark:text-white">Hello, my name is </h4>
@@ -250,8 +251,8 @@ export default function App() {
                 
 
             
-                <section id="about" className="snap-start md:pt-20 sm:pt-10 overflow-hidden h-full md:mb-40 bg-customGreen dark:bg-gray-900 dark:text-white" ref={ref}>
-                    <div className="text-black text-3xl font-bold items-center justify-center pt-10 pb- flex flex-row">
+                <section id="about" ref={sectionsRef.about} className="snap-start md:pt-20 sm:pt-10 overflow-hidden h-full md:mb-40 bg-customGreen dark:bg-gray-900 dark:text-white">
+                    <div ref={ref} className="text-black text-3xl font-bold items-center justify-center pt-10 pb- flex flex-row">
                       <img 
                         src="https://raw.githubusercontent.com/rrit5727/Portfolio-website/main/Readme_imgs/GPT.png" 
                         className="rounded-lg  h-[40px] " 
@@ -317,7 +318,7 @@ export default function App() {
                 
 
               
-                  <section id="projects" className="h-screen snap-start pt- flex justify-center items-center">              
+                  <section id="projects" ref={sectionsRef.projects} className="h-screen snap-start pt- flex justify-center items-center">              
                     <div className="flex flex-col items-center justify-center md:h-3/5 md:w-4/5 sm:h-4/5 sm:w-4/5  rounded-lg overflow-hidden">
                       <h1 className="text-3xl pb-5 dark:text-white">
                         Projects
@@ -330,7 +331,7 @@ export default function App() {
                    
                   
              
-                  <section id="skills" className=" h-screen snap-start pt-20">
+                  <section id="skills" ref={sectionsRef.skills} className=" h-screen snap-start pt-20">
                     <div className="flex-col justify-center items-center text-center justify-items-end">
                       <div className="h-[100px] pt-10">
                         <h3 className="text-3xl py-1 dark:text-white">Skills</h3>                                        
