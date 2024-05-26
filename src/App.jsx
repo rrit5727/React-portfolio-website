@@ -218,7 +218,7 @@ export default function App() {
                               ]}
                               wrapper="span"
                               speed={{ type: 'keyStrokeDelayInMs', value: 30 }}
-                              style={{  display: 'inline-block' }}
+                              style={{  display: 'inline-block', width: '250px' }}
                               class="custom-type-animation-cursor"
                               repeat={0}
                             />
