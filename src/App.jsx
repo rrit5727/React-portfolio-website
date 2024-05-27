@@ -131,7 +131,7 @@ export default function App() {
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20resume.pdf">CV
+                      href="https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20resume.pdf">Resume
                     </a>
                   </li>
                 </ul>
@@ -169,7 +169,7 @@ export default function App() {
                     <a className="
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark" 
-                      href="https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20resume.pdf">CV
+                      href="https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20resume.pdf">Resume
                     </a>
                   </li>
                   <li class="menu-button" onClick={showSidebar}>
