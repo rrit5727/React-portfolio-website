@@ -59,7 +59,7 @@ Error generating stack: `+s.message+`
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark`,onClick:()=>d("skills"),children:"Skills"})}),w.jsx("li",{children:w.jsx("a",{className:`
                         text-black dark:text-white  px-4 py-2  ml-8
-                        border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark`,href:"https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20CV.pdf",children:"CV"})})]}),w.jsxs("ul",{className:"flex items-center",children:[w.jsx("li",{class:"hideOnMobile",children:w.jsx("a",{className:`
+                        border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark`,href:"https://github.com/rrit5727/Employment/raw/main/Ross%20Ritchie%20resume.pdf",children:"CV"})})]}),w.jsxs("ul",{className:"flex items-center",children:[w.jsx("li",{class:"hideOnMobile",children:w.jsx("a",{className:`
                         text-black dark:text-white  px-4 py-2  ml-8
                         border-b-0 hover:border-b-4 hover:border-b-secondary dark:hover:border-b-secondary_dark`,onClick:()=>d("intro"),children:"Intro"})}),w.jsx("li",{class:"hideOnMobile",children:w.jsx("a",{className:`
                         text-black dark:text-white  px-4 py-2  ml-8
